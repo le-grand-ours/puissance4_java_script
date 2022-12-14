@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jeu.css">
+    <title>Puissance 4</title>
+</head>
+
+<body>
+
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+
+    <div id="jeu">
+
+    </div>
+    <div id="alert">
+    </div>
+
+    <div class="container">
+
+        <div class="gauche">
+            <button class="reset" onclick="start();">Recommencer</button>
+            <br>
+            <br>
+            <div class="ligne">
+                <p id="player"></p>
+                <div id="time">0:00</div>
+            </div>
+                <br>
+            <p id="score"></p>
+            <br>
+            <div id="colorPlayer"></div>
+        </div>   
+        <div class="droite">
+            <label class="haut" for="hauteur">Hauteur : </label>
+            <input type="text" id="hauteur" value="6">
+            <br>
+            <label class="large" for="largeur">Largeur : </label>
+            <input type="text" id="largeur" value="7"><br/>
+            <br>
+            <button class="new" onclick="nouvellePartie();">Nouvelle Partie</button>"
+        </div>
+        <div class="bouton_retour">
+            <button class="retour" onclick="window.location.href='puissance4.html'">Retour</button>
+        </div><!-- div du chrono a deplacer -->
+    </div>
+</body>
+<script src="java-script/jeu.js"></script>
+</html>
